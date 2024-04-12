@@ -145,3 +145,14 @@ test("Scenario 8", () => {
   const csAway = [2, 4];
   expect(customerSuccessBalancing(css, customers, csAway)).toEqual(1);
 });
+
+test("Scenario 9", () => {
+  const css = mapEntities([60, 40, 95, 75, 15, 30, 60, 90, 1, 2, 3, 4, 5]);
+  const customers = mapEntities([
+    90, 70, 20, 40, 60, 10, 1, 2, 3, 4, 5, 6, 7, 1, 20, 90, 70, 20, 40, 60, 10,
+    1, 2, 3, 4, 5, 6, 7, 1, 20, 90, 70, 20, 40, 60, 10, 1, 2, 3, 4, 5, 6, 7, 1,
+    20,
+  ]);
+  const csAway = [2, 4];
+  expect(customerSuccessBalancing(css, customers, csAway)).toEqual(5);
+});
